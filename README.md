@@ -1,7 +1,7 @@
 # Weather6
 
 ## Description
-
+This application uses a weather api to fetch your weather data so you can get the current temperature!
 ## Table of Contents
 
 - [Usage](#usage)
@@ -19,5 +19,5 @@ Peer Consultation:<br>
 ***Danny Cohen*** 
 ***Jacqueline Martinez*** 
 ## Features
-
+This application on the left has a search bar for you to find the weather for the area that you need it will then display the 5 day forecast.
 ## License
