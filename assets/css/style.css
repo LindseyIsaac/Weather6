@@ -21,7 +21,6 @@ body {
 }
 
 main {
-  /* styling for content area */
   display: inline-flex;
   align-items: stretch;
   margin: 1rem 0rem;
@@ -186,7 +185,6 @@ button {
   gap: 0.5rem;
 }
 .hide {
-  /* styling to hide area */
   display: none !important;
 }
   
