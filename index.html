@@ -8,14 +8,13 @@
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Weather_Dashboard_MVR_C6</title>
+    <title>Grab The Weather</title>
 </head>
 
 <body>
-    <!-- site title area maybe future navigation -->
     <header>
         <section id="title" class="card">
-            The Weather is Here
+            Whats the Weather?
         </section>
     </header>
     <!-- main content of the site -->
@@ -25,7 +24,7 @@
             <!-- portion for new search -->
             <section id="newSearch" class="card">
                 <div id="searchTitle">
-                    Search for a City
+                   Search the city here.
                 </div>
                 <form id="searchForm">
                     <input id="searchInput" placeholder="City">
@@ -37,7 +36,7 @@
             <!-- portion for recent search recall -->
             <section id="recentSearch" class="card">
                 <div id="recentTitle">
-                    Recent Forecasts:
+                    Recently Searched Forecasts:
                 </div>
                 <ul id="recentList">
                 </ul>
@@ -54,7 +53,7 @@
                     <div id="currentIcon" class="icon">
                     </div>
                     <div id="currentDate" class="date">
-                        Now
+                        At this time:
                     </div>
                 </div>
                 <div class="forecastDetail">
@@ -71,8 +70,8 @@
             </section>
             <!-- display of 5 day forecast in the future -->
             <section id="future">
-                <div id="daysTitle" class="card">
-                    5 Day Forecast
+                <div id="daysTitle">
+                    5-Day Forecast:
                 </div>
                 <div id="daysBlock" class="hide"></div>
                 <!-- starter city temporary future forecast -->
@@ -98,7 +97,7 @@
                     <section class="card days">
                         <div class="forecastBasic">
                             <div class="date">
-                                In a Couple of Days
+                                In a 3 days:
                             </div>
                         </div>
                         <div class="forecastDetail">
@@ -116,7 +115,7 @@
                     <section class="card days">
                         <div class="forecastBasic">
                             <div class="date">
-                                Then in a Few Days
+                                4th day:
                             </div>
                         </div>
                         <div class="forecastDetail">
@@ -134,7 +133,7 @@
                     <section class="card days">
                         <div class="forecastBasic">
                             <div class="date">
-                                The Day After That
+                                Day 5:
                             </div>
                         </div>
                         <div class="forecastDetail">
@@ -152,7 +151,7 @@
                     <section class="card days">
                         <div class="forecastBasic">
                             <div class="date">
-                                Several Days Later
+                                Several Days Later:
                             </div>
                         </div>
                         <div class="forecastDetail">
@@ -171,19 +170,13 @@
             </section>
         </article>
     </main>
-    <!-- footer tag area -->
-    <footer>
-        <section id="cuteExit" class="card">
-            I wish you were beautiful
-        </section>
-    </footer>
     <!-- javascript connections -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- dayjs -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
         integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-    <!-- my javascript -->
+    <!-- javascript -->
     <script src="./assets/js/script.js"></script>
 </body>
 

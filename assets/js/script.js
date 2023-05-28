@@ -1,4 +1,4 @@
-let apiKey = "d79e7c1302e1954e9746b6da76d3cba5";
+let apiKey = "58d400590a39fd45b72b35bf872539b5";
 let searchForm = $(`#searchForm`);
 let newSearch = $(`#searchInput`).val();
 let searchBtn = $(`#searchBtn`);
