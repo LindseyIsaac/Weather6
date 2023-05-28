@@ -10,8 +10,7 @@
 - [License](#license)
 
 ## Usage
-
-    ![alt text](./assets/images/weathers.png)
+![alt text](assets/images/weathers.png)
 
 ## Credits
 Peer Consultation:<br>
