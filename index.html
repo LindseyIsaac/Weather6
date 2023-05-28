@@ -1,21 +1,190 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather_Dashboard_MVR_C6</title>
+</head>
+
+<body>
+    <!-- site title area maybe future navigation -->
+    <header>
+        <section id="title" class="card">
+            The Weather is Here
+        </section>
+    </header>
+    <!-- main content of the site -->
+    <main>
+        <!-- left side control panel for city search & recent search recall -->
+        <aside id="searchPanel">
+            <!-- portion for new search -->
+            <section id="newSearch" class="card">
+                <div id="searchTitle">
+                    Search for a City
+                </div>
+                <form id="searchForm">
+                    <input id="searchInput" placeholder="City">
+                    <button id="searchBtn" class="btn">
+                        Get Forecast
+                    </button>
+                </form>
+            </section>
+            <!-- portion for recent search recall -->
+            <section id="recentSearch" class="card">
+                <div id="recentTitle">
+                    Recent Forecasts:
+                </div>
+                <ul id="recentList">
+                </ul>
+            </section>
+        </aside>
+        <!-- display area for weather condition forecast -->
+        <article id="weatherConditions">
+            <!-- display of current conditions -->
+            <section id="current" class="card">
+                <div id="currentTitle">
+                    The Starter City
+                </div>
+                <div class="forecastBasic">
+                    <div id="currentIcon" class="icon">
+                    </div>
+                    <div id="currentDate" class="date">
+                        Now
+                    </div>
+                </div>
+                <div class="forecastDetail">
+                    <div id="currentTemperature" class="stat">
+                        Temperature: Fair °F
+                    </div>
+                    <div id="currentWindSpeed" class="stat">
+                        Wind Speed: Gentle Breeze MPH
+                    </div>
+                    <div id="currentHumidity" class="stat">
+                        Humidity: Light %
+                    </div>
+                </div>
+            </section>
+            <!-- display of 5 day forecast in the future -->
+            <section id="future">
+                <div id="daysTitle" class="card">
+                    5 Day Forecast
+                </div>
+                <div id="daysBlock" class="hide"></div>
+                <!-- starter city temporary future forecast -->
+                <div id="temporary">
+                    <section class="card days">
+                        <div class="forecastBasic">
+                            <div class="date">
+                                Tomorrow
+                            </div>
+                        </div>
+                        <div class="forecastDetail">
+                            <div class="stat">
+                                Temperature: <span>Decent</span> &#8457;
+                            </div>
+                            <div class="stat">
+                                Wind Speed: <span>Stiff</span> MPH
+                            </div>
+                            <div class="stat">
+                                Humidity: <span>Not Bad</span> %
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card days">
+                        <div class="forecastBasic">
+                            <div class="date">
+                                In a Couple of Days
+                            </div>
+                        </div>
+                        <div class="forecastDetail">
+                            <div class="stat">
+                                Temperature: <span>Cooling Down</span> &#8457;
+                            </div>
+                            <div class="stat">
+                                Wind Speed: <span>Strong</span> MPH
+                            </div>
+                            <div class="stat">
+                                Humidity: <span>Swampy</span> %
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card days">
+                        <div class="forecastBasic">
+                            <div class="date">
+                                Then in a Few Days
+                            </div>
+                        </div>
+                        <div class="forecastDetail">
+                            <div class="stat">
+                                Temperature: <span>Cold</spans=> &#8457;
+                            </div>
+                            <div class="stat">
+                                Wind Speed: <span>Hurricane</span> MPH
+                            </div>
+                            <div class="stat">
+                                Humidity: <span>Underwater</span> %
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card days">
+                        <div class="forecastBasic">
+                            <div class="date">
+                                The Day After That
+                            </div>
+                        </div>
+                        <div class="forecastDetail">
+                            <div class="stat">
+                                Temperature: <span>A Bit Warm</span> &#8457;
+                            </div>
+                            <div class="stat">
+                                Wind Speed: <span>Gusty</span> MPH
+                            </div>
+                            <div class="stat">
+                                Humidity: <span>Dry</span> %
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card days">
+                        <div class="forecastBasic">
+                            <div class="date">
+                                Several Days Later
+                            </div>
+                        </div>
+                        <div class="forecastDetail">
+                            <div class="stat">
+                                Temperature: <span>Just Right</span> &#8457;
+                            </div>
+                            <div class="stat">
+                                Wind Speed: <span>Cooling Breeze</span> MPH
+                            </div>
+                            <div class="stat">
+                                Humidity: <span>Perfect</span> %
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- footer tag area -->
+    <footer>
+        <section id="cuteExit" class="card">
+            I wish you were beautiful
+        </section>
+    </footer>
+    <!-- javascript connections -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- dayjs -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <!-- my javascript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
