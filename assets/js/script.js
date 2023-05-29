@@ -9,10 +9,6 @@ if (localStorage.getItem("recentSearches")) {
   recentSearches = JSON.parse(localStorage.getItem("recentSearches"));
 }
 
-// check for and load recent searches from local history
-// $(document).ready(writePastSearches(recentSearches));
-// $(document).on('load', writePastSearches(recentSearches));
-
 // event listener for a new search
 searchBtn.on(`click`, function (event) {
   event.preventDefault();
@@ -85,9 +81,8 @@ function predictForecast(citySearch) {
     fetch(futureUrl).then(function (response) {
       if (response.ok) {
         response.json().then(function (data) {
-          // for loop to repeat through 5 day cycle of the following day cards
+          // for loop to repeat through 5 day cycle
           for (i = 5; i < data.list.length; i += 8) {
-            // creating elements for eah day in forecast & add classes
             let createDay = document.createElement("section");
             $(createDay).addClass("card days");
             let createForecastBasic = document.createElement("div");

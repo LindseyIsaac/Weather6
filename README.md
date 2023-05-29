@@ -11,7 +11,7 @@ This application uses a weather api to fetch your weather data so you can get th
 
 ## Usage
 ![alt text](assets/images/weathers.png)
-Deployed Link: 
+Deployed Link: https://lindseyisaac.github.io/Weather6/
 ## Credits
 Peer Consultation:<br>
 ***M Vincent Richards*** 
