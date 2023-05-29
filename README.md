@@ -21,3 +21,6 @@ Peer Consultation:<br>
 ## Features
 This application on the left has a search bar for you to find the weather for the area that you need it will then display the 5 day forecast.
 ## License
+MIT License
+
+Copyright (c) 2023 Lindsey
